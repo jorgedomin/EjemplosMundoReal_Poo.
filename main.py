@@ -1,16 +1,14 @@
 # Programación Tradicional
-# Ejemplo: Gestión de una cuenta bancaria
-
-# Definición de variables globales
+                                        # Definición de variables globales
 balance = 0
 interest_rate = 0.05
 
-# Función para depositar dinero en la cuenta
-def deposit(amount):
+                                           # Función para depositar dinero en la cuenta
+def depost(amount):
     global balance
     balance += amount
 
-# Función para retirar dinero de la cuenta
+                            # Función para retirar dinero de la cuenta
 def withdraw(amount):
     global balance
     balance -= amount
@@ -21,12 +19,12 @@ def calculate_interest():
     interest = balance * interest_rate
     balance += interest
 
-# Uso de las funciones en la programación tradicional
+                                               # Uso de las funciones en la programación tradicional
 deposit(1000)
 withdraw(500)
 calculate_interest()
 
-# Imprimir el saldo final
+                                                 # Imprimir el saldo final
 print("Balance (Traditional):", balance)
 
 
@@ -38,7 +36,7 @@ class BankAccount:
         self.balance = initial_balance
         self.interest_rate = interest_rate
 
-    def deposit(self, amount):
+    def depost(self, amount):
         self.balance += amount
 
     def withdraw(self, amount):
